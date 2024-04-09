@@ -204,6 +204,9 @@ header {
   padding-left: 14px;
   background-color: #B30623;
 }
+.mobilefooter {
+  display: none;
+}
 .bookingcontainer{
   display: flex;
   flex-direction: row;
