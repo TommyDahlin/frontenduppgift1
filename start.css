@@ -18,12 +18,13 @@ body {
 .theatre {
   margin: 20px auto;
   width: 100%;
-  max-width: 350px;
+  max-width: 525px;
   border-radius: 5px;
   background-color: #fff;
   padding: 20px 10px;
   box-shadow: 0px 0px 17px -4px #000;
 }
+
 .screen-side {
   text-align: center;
 }
@@ -76,8 +77,12 @@ ol {
   flex: 0 0 14.28571%;
   padding: 5px;
   position: relative;
+  max-width: 37px;
 }
 .seat:nth-child(3) {
+  margin-right: 14.28571%;
+}
+.seat:nth-child(6) {
   margin-right: 14.28571%;
 }
 .seat input[type="checkbox"] {
@@ -211,6 +216,10 @@ header {
   display: flex;
   flex-direction: row;
   margin-top: 20px;
+}
+main{
+  display: flex;
+  flex-direction: column;
 }
 .lengthlanguagecontainer{
   display: flex;
@@ -376,6 +385,13 @@ header h2 {
 .nowplayingimgcontainer {
   display: flex;
   position: relative;
+  background: rgb(2,0,36);
+background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,0,0,0.8813726174063375) 0%, rgba(0,212,255,0) 100%);
+  
+}
+.nowplayingimgcontainer img{
+  z-index: -1;
+  
 }
 .nowplayingimgtitle {
   font-family: "Oswald", sans-serif;
@@ -391,7 +407,7 @@ header h2 {
   color: white;
   position: absolute;
   bottom: 3rem;
-  right: 6rem;
+  right: 10rem;
 }
 .movetoend{
   padding-left: 80%;
@@ -414,6 +430,10 @@ header h2 {
     flex-direction: row;
     align-items: center;
     border-radius: 0;
+  }
+  .theatre{
+    display: flex;
+    overflow-x: auto;
   }
   .headerimg {
     padding-left: 8rem;
