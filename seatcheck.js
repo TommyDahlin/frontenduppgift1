@@ -16,10 +16,13 @@ function clickedSeats(){
     console.log(seatArray)
         seatArray.forEach(element => {
     
-
          const li = document.createElement('li');
 
          li.innerHTML = element;
 
          ul.appendChild(li);
-        });
+    });
+
+function booked(){
+    alert("We have sent a confirmation mail to your inbox.")
+}
